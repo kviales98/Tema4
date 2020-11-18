@@ -7,8 +7,8 @@ from scipy import stats
 import matplotlib.pyplot as plt
 
 # Variables aleatorias A y Z
-vaX = stats.norm(0, np.sqrt(36))
-vaY = stats.uniform(0, np.sqrt(36))
+vaX = stats.norm(0, np.sqrt(20))
+vaY = stats.uniform(0, np.sqrt(20))
 
 # Creación del vector de tiempo
 T = 100			# número de elementos
@@ -58,7 +58,7 @@ for n in range(N):
 	plt.plot(taus, corr[n,:])
 
 # Valor teórico de correlación
-Rww = (36^2)*np.cos((np.pi/3)*taus)
+Rww = (20^2)*np.cos((np.pi/3)*taus)
 
 # Gráficas de correlación para cada realización y la
 plt.plot(taus, Rww, '-.', lw=4, label='Correlación teórica')
