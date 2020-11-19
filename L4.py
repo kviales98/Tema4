@@ -6,7 +6,7 @@ import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
 
-# Variables aleatorias A y Z
+# Variables aleatorias X y Y
 vaX = stats.norm(0, np.sqrt(20))
 vaY = stats.uniform(0, np.sqrt(20))
 
